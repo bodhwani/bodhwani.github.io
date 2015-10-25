@@ -14,6 +14,27 @@ new things as much as he can.">
 <link href='http://fonts.googleapis.com/css?family=Kreon:300,400,700' rel='stylesheet' type='text/css'>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<!--Scaling script-->
+<script>
+	$(function() {
+		var pull 		= $('#pull');
+			menu 		= $('nav ul');
+			menuHeight	= menu.height();
+		$(pull).on('click', function(e) {
+			e.preventDefault();
+			menu.slideToggle();
+		});
+		$(window).resize(function(){
+    		var w = $(window).width();
+    		if(w > 320 && menu.is(':hidden')) {
+    			menu.removeAttr('style');
+    		}
+		});
+	});
+</script>
+
 <!--font-Awesome-->
 <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
 <!--font-Awesome-->
@@ -34,6 +55,7 @@ new things as much as he can.">
 				<li><a href="http://www.slothparadise.com" target="_blank">blog</a></li>
 				<li class="page-scroll"><a href="docs/Huy Le - Resume (2015).pdf">curricula vitae (cv)</a></li>
 			</ul>
+			<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
 		</nav>
 		<div class="clearfix"></div>
 	</div>
@@ -47,7 +69,7 @@ new things as much as he can.">
  	 	<ol>
  	 		<li>History of all projects I've contributed.</li>
  	 		<li>Outside of class.</li>
- 	 		<li>I put in personal effort at the time.</li>
+ 	 		<li>I put in effort into the project.</li>
  	 	</ol>
 
  	 	<h3 class="spacing">b3.js</h3>
@@ -62,7 +84,7 @@ new things as much as he can.">
 
  	 	<h3 class="spacing">Deploy to Docker</h3>
 		<h4>June 2015</h4>
-		<p>DockerCon Hackathon. A web interface to deploy Docker containers to any cloud server.</p>
+		<p>DockerCon Hackathon. A web server to deploy Docker containers to any cloud server.</p>
 
  	 	<h3 class="spacing">REIT</h3>
 		<h4>June 2015</h4>
@@ -109,7 +131,7 @@ new things as much as he can.">
 		<p>BUILDS members participated at UCONN for their CSI Cyberseed Software Challenge. We won second place! Challenges for programs with buffer overflow problems.</p>
 
  	 	<h3 class="spacing">KiwiMT</h3>
-		<h4>September 2014</h4>
+		<h4>October 2014</h4>
 		<p>How can we leverage the ubiquity of student owned mobile devices in KR education? KiwiMT is a project management tool that focuses on two basic functions, a timeline and setting tasks. Timeline and Goal-oriented graph. Possible presentation feature to the timeline view that allows you to go left to right. Learning implications that provides people to see the full picture of the project/work/collaboration/group. Select the date and deadline. Select the people that you want to share the project with (via e-mail or username). Group Calendar select a day. Write note or agenda for the day. Individual Calendar select a day. Write note or agenda for the day. Generates a timeline with those notes. Colored bars for each task for the group and individuals.</p>
 
  	 	<h3 class="spacing">Livh</h3>
@@ -146,11 +168,7 @@ new things as much as he can.">
 
  	 	<h3 class="spacing">Echo Can</h3>
 		<h4>April 2014</h4>
-		<p>1st Place Grand Prize winner. A new generation of trashcans that help maintain Boston's knack for sustainability. By using sound processing techniques and Arduino microprocessor and sensors, Echo Can is able to determine which object has been tossed and can separate the trash from the recyclables.</p>
-
- 	 	<h3 class="spacing">Optimal</h3>
-		<h4>March 2014</h4>
-		<p>SendGrid API Prize Winner at HackPrinceton 2014. Optimal (iOS application) streamlines mobile information sending via the form of pictures and canvas drawing (our doodling system). The application provides a platform where friends and colleagues can collaborate on infant ideas, share assignments, or explain intricate problems. Users have a means of sharing a picture that they took in the form of canvas doodle or actual image with the addition of voice over recording for that added explanation detail. An application meant to bring people together through the power of communicating ideas and work.</p>
+		<p>1st Place Grand Prize winner of HackBostonStrong. A new generation of trashcans that help maintain Boston's knack for sustainability. By using sound processing techniques and Arduino microprocessor and sensors, Echo Can is able to determine which object has been tossed and can separate the trash from the recyclables.</p>
 
  	 	<h3 class="spacing">Optimal</h3>
 		<h4>March 2014</h4>
@@ -194,7 +212,7 @@ new things as much as he can.">
 
  	 	<h3 class="spacing">NYU-Poly's CSAW Preliminaries</h3>
 		<h4>October 2013</h4>
-		<p>Security Competition. BUILDS qualified for the finals of NYU-Poly’s CSAW (Cyber-Security Awareness Week) Capture-The-Flag competition for 2013. This event has teams from around the world competing to solve computer security challenges.</p>
+		<p>Security Competition. BUILDS qualified for the finals of NYU-Poly's CSAW (Cyber-Security Awareness Week) Capture-The-Flag competition for 2013. This event has teams from around the world competing to solve computer security challenges.</p>
 
 		</div>
 	</div>
@@ -216,7 +234,7 @@ new things as much as he can.">
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
 	ga('create', 'UA-46691413-1', 'huyle.me');
 	ga('send', 'pageview');
 </script>
