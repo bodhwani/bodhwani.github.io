@@ -12,6 +12,7 @@
 
 <link href='http://fonts.googleapis.com/css?family=Kreon:300,400,700' rel='stylesheet' type='text/css'>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/equalizer.css" rel="stylesheet" type="text/css" media="all" />
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
 
@@ -67,13 +68,14 @@
 		<div class="col-md-7 about_text" style="float: none; margin: 0 auto;">
 			<h3>Huy Le</h3>
 			<h4>Software Developer</h4>
-			<p>I'm a tinkerer, love to create, and build new things as much as I can. Most of all, I enjoy contributing to the community! I make YouTube tutorials on my channel, MicrowaveSam. 24K subscribers. I write posts on my tech blog, slothparadise. 15K views monthly. The most useful app I've made is Pocket Converter, YouTube to MP3 on Android. 10,000 active users. I'm involved with BUILDS, the hackerspace at BU. I'm a mentor for BUHPC, high performance computing teaching. I love hackathons and was an organizer of BostonHacks.</p>
+			<p>I make YouTube tutorials on my YouTube channel, MicrowaveSam. 24K subscribers.<br>
+			   I write tech posts on my blog, slothparadise.com. 15K views monthly.<br>
+			   A useful app I've made is Pocket Converter, YouTube to MP3 on Android. 10,000 active users. 400,000+ music downloaded.</p>
 
 			<div class="soc_icons navbar-right" style="margin-top: 5rem;">
 				<ul class="list-unstyled text-center">
 					<li><a href="https://github.com/huyle333" target="_blank"><i class="fa fa-github-square"></i></a></li>
 					<li><a href="https://www.youtube.com/user/microwavesam" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
-					<li><a href="https://facebook.com/huyle333" target="_blank"><i class="fa fa-facebook"></i></a></li>
 					<li><a href="https://twitter.com/huyle333" target="_blank"><i class="fa fa-twitter"></i></a></li>
 					<li><a href="https://linkedin.com/in/huyle333" target="_blank"><i class="fa fa-linkedin"></i></a></li>
 					<li><a href="http://pocketconverter.co" target="_blank"><i class="fa fa-get-pocket"></i></a></li>
@@ -90,6 +92,19 @@
 			<div class="copy text-center">
 				<p class="link"><span>Made with <span id="heart">&hearts;</span> and templates.</a></span></p>
 				<p>huyle333(at)bu(dot)edu</p>
+				<div class="bar-c">
+					<div id="bar-1" class="bar"></div>
+					<div id="bar-2" class="bar"></div>
+					<div id="bar-3" class="bar"></div>
+					<div id="bar-4" class="bar"></div>
+					<div id="bar-5" class="bar"></div>
+					<div id="bar-6" class="bar"></div>
+				</div>
+				<audio id="background_audio" autoplay>
+					<source src="docs/wii.mp3" type="audio/mpeg">
+				</audio>
+				<br>
+				<a href="#noscroll" id="mute">Toggle music</a>
 			</div>
 		</div>		
 	</div>
@@ -104,5 +119,8 @@
 	ga('create', 'UA-46691413-1', 'huyle.me');
 	ga('send', 'pageview');
 </script>
+
+<script type="text/javascript" src="js/mute.js"></script>
+
 </body>
 </html>
