@@ -880,12 +880,12 @@ h2.style{
 		left: 20px;
 	}
 	.h_logo {
-		left: 42.333%;
+		left: 39.333%;
 	}
 }
 @media only screen and (max-width: 320px) {
 	.h_logo {
-		left: 38.333%;
+		left: 35.333%;
 	}
 	nav li {
 		display: block;
