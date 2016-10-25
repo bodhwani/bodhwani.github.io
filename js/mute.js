@@ -1,5 +1,6 @@
 var audio = document.getElementById('background_audio');
-var clicked = true;
+audio.muted = !audio.muted;
+var clicked = false;
 
 document.getElementById('mute').addEventListener('click', function (e) {
     e = e || window.event;
