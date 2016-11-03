@@ -1,5 +1,7 @@
 var audio = document.getElementById('background_audio');
-var clicked = true;
+$(".bar").addClass("noAnim");
+audio.muted = !audio.muted;
+var clicked = false;
 
 document.getElementById('mute').addEventListener('click', function (e) {
     e = e || window.event;
