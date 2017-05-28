@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Vinit - About</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Vinit Bodhwani is a web developer currently persuing B.Tech degree of CSE in VIT, Vellore .">
+<meta name="author" content="Vinit Bodhwani">
+<link rel="shortcut icon" href="images/logo.png">
+
+<link href='http://fonts.googleapis.com/css?family=Kreon:300,400,700' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<!--Scaling script-->
+<script>
+	$(function() {
+		var pull 		= $('#pull');
+			menu 		= $('nav ul');
+			menuHeight	= menu.height();
+		$(pull).on('click', function(e) {
+			e.preventDefault();
+			menu.slideToggle();
+		});
+		$(window).resize(function(){
+    		var w = $(window).width();
+    		if(w > 320 && menu.is(':hidden')) {
+    			menu.removeAttr('style');
+    		}
+		});
+	});
+</script>
+
+<!--font-Awesome-->
+<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+<!--font-Awesome-->
+
+</head>
+<body>
+<div class="header_bg" id="home"><!-- start header -->
+<div class="container">
+	<div class="row header text-center specials">
+		<div class="h_logo">
+			<a href="index.html"><img src="images/logo.png" alt="" class="responsive"/></a>
+		</div>
+		<nav class="top-nav">
+			<ul class="top-nav nav_list">
+				<li><a style="margin-left: -40%" href="organizations.html" target="">Skills and Org.</a></li>
+				<li><a style="margin-left: -80%" href="projects.html" target="">Projects</a></li>
+				<li style="margin-left: -2%"class="logo page-scroll"><a title="MicrowaveSam" href="index.html"><img src="images/logo.png" alt="" class="responsive"/></a></li>
+				<li><a href="about.html" target="">About Me</a></li>
+				<li class="page-scroll"><a href="contact.html" target="">Contact Me</a></li>
+			</ul>
+			<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+		</nav>
+		<div class="clearfix"></div>
+	</div>
+</div>
+</div>
+<div class="container"><!-- start main -->
+	<div class="main row">
+		<div class="col-md-7 para" style="float: none; margin: 0 auto;">
+
+ 	 	<h2 class="style">About Me</h2>
+ 	 	<h3 class="spacing">Brief Introduction</h3>
+
+ 	 	<h3>Hi There,</h3>
+ 	 	<h4>This is Vinit Bodhwani,</h4>
+ 	 	<h4>
+ 	 	I always tries to solve real life problems, which can make people's life easier and in a better way.<br><br>
+ 	 	Making websites took my attention which is a great platform to achieve this. Because of my interest, I get into deeper and deeper and keep improving my skills. With the advancement of technology in today's world, Machine Learning and Artificial Intelligence draws my attention as well as interest. I believe these fields can make this world, a better place and make othe's life easier.<br><br>
+ 	 	Apart from this, I like to motivate and inspire others and very good at it.Yes! you read that correctly.
+ 	 	I love to make new connections, going outside to different places and exploring new things!
+ 	 	</h4>
+
+		<h3 class="spacing">My Hobbies</h3>
+		<h4>Apart from technology, I do a lot! I play sports like Football, Basketball, Cricket, Table tennis(favourite), Badminton, Chess and a lot. I feel swimming is the best exercise to maintain body balance. 
+		<br><br>I watch TV series like Flash, Arrow, Game of thrones, Prison Break, West World. I love the last one as they used Artificial Intelligence concept for making series more fascinating and intersting.<br><br>Also I am a kind of spritual guy, and love to know who we really are from inside. I spent minimum half an hour alone, to know myself as I believe that one can find solution to all problems, by looking inside. I love to medidate daily as it will give peace and the essence of our life.<br><br>
+		I like to listen soft, pleasant songs. Some of my favourite artists are Avicci, Twenty One Pilots, Chainsmokers, Avril Lavinge, Kesha, Rihanna Coldplay, Arjit Singh, Atif Aslam, A.R.Rehman etc.<br><br>
+		Dancing is the most interesting activity which I feel. I participated in different contests at the time of my school. Favourite dancers are Michael Jackson, Prabhu Deva and Raghav. His crocroaz style is the best thing ever, in dance, invented by him. I do popping and locking whenever I get free time. 
+
+		If we talk about movies, then I would like to watch animated movies and those kind of movies, which provides something new to learn and build our intelligence. Some of the movies like  Futureworld, Tron ,The internet, Transformers, Robot, Iron Man etc. explore our mind about how technology is going to be in future. 
+
+		Well, that was a small introduction about me. Thank you for your time and knowing about me.Bueno dias [Have a good day]!
+
+
+		</h4>
+
+
+
+ 	 	
+		</div>
+	</div>
+</div><!-- end main -->
+
+<div class="footer1_bg"><!-- start footer1 -->
+	<div class="container">
+		<div class="row  footer">
+			<div class="copy text-center">
+				<br><p>Vinit Bodhwani © 2017</p>
+			</div>
+		</div>		
+	</div>
+</div>
+
+
+<!--Google Analytics script-->
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-46691413-1', 'huyle.me');
+	ga('send', 'pageview');
+</script>
+</body>
+</html>

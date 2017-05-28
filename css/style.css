@@ -277,6 +277,7 @@ nav a#pull {
 /* start footer */
 .footer_bg{
 	background: #353535;
+	
 }
 .footer{
 	padding: 4%;
@@ -390,11 +391,12 @@ nav a#pull {
 /* start footer */
 .footer1_bg{
 	background: #222222;
+	
 }
 .copy p{
 	color: #c9c9c9;
 	font-size: 14px;
-	line-height: 1.8em;
+	line-height: 0.3em;
 }
 .copy p a{
 	color:#2EB398;
